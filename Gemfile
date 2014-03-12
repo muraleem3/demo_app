@@ -10,7 +10,15 @@ group :development, :test do
     gem 'sqlite3'
 end
 
-gem 'pg'
+#Gem for postgress
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
+
+
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -37,12 +45,6 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-
-#Gem for postgress
-#group :production do
- # gem 'pg', '0.15.1'
-  #gem 'rails_12factor', '0.0.2'
-#end
 
 
 # Use ActiveModel has_secure_password
