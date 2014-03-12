@@ -3,8 +3,6 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-<<<<<<< HEAD
+
 DemoApp::Application.load_tasks
-=======
-FirstApp::Application.load_tasks
->>>>>>> origin/master
+
